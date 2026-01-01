@@ -489,9 +489,12 @@
         </section>
         
         <footer>
-            <p>DIGITAL PORTFOLIO © 2025 | NEXHaz</p>
+            <p>DIGITAL PORTFOLIO © <span id="current-year"></span> | NEXHaz</p>
         </footer>
         
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
         <script src="script.js"></script>
-        </body>
-        </html>
+    </body>
+    </html>
